@@ -295,4 +295,108 @@ header {
         text-align: right;
         color: #FFFFFF; }
 
+.section__info {
+  padding: 80px 0; }
+  @media (max-width: 768px) {
+    .section__info {
+      padding: 0; } }
+  .section__info .info {
+    display: flex; }
+    @media (max-width: 768px) {
+      .section__info .info {
+        flex-wrap: wrap; } }
+    .section__info .info .item__title {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 36px;
+      letter-spacing: -0.04em;
+      max-width: 273px;
+      width: 100%;
+      color: #343A67; }
+      @media (max-width: 500px) {
+        .section__info .info .item__title {
+          font-size: 20px;
+          line-height: 30px; } }
+    .section__info .info__item {
+      flex: 0 0 50%;
+      padding: 20px 50px; }
+      @media (max-width: 768px) {
+        .section__info .info__item {
+          flex: 0 0 100%;
+          padding: 40px 0; } }
+      .section__info .info__item.left__item {
+        border-right: 2px solid #EBEFF5; }
+        @media (max-width: 768px) {
+          .section__info .info__item.left__item {
+            border-right: none;
+            border-bottom: 2px solid #EBEFF5; } }
+      .section__info .info__item .info__blocks {
+        display: flex;
+        justify-content: space-between; }
+        @media (max-width: 1100px) {
+          .section__info .info__item .info__blocks {
+            flex-wrap: wrap; } }
+        .section__info .info__item .info__blocks .info__block {
+          margin-top: 38px;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 22px;
+          color: #5F648C;
+          letter-spacing: -0.04em; }
+          @media (max-width: 1100px) {
+            .section__info .info__item .info__blocks .info__block {
+              flex: 0 0 100%;
+              display: flex;
+              align-items: center; } }
+          @media (max-width: 500px) {
+            .section__info .info__item .info__blocks .info__block {
+              margin-top: 20px; }
+              .section__info .info__item .info__blocks .info__block span {
+                border-top: 1px solid rgba(235, 239, 245, 0.7);
+                border-bottom: 1px solid rgba(235, 239, 245, 0.7);
+                display: block;
+                padding: 25px 0;
+                width: 100%; } }
+          .section__info .info__item .info__blocks .info__block-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px; }
+            @media (max-width: 1100px) {
+              .section__info .info__item .info__blocks .info__block-img {
+                margin-bottom: 0;
+                margin-right: 20px; } }
+            @media (max-width: 500px) {
+              .section__info .info__item .info__blocks .info__block-img {
+                width: 50px;
+                height: 50px;
+                border-radius: 12px;
+                flex-shrink: 0; }
+                .section__info .info__item .info__blocks .info__block-img img {
+                  width: 25px;
+                  height: 25px; } }
+            .section__info .info__item .info__blocks .info__block-img.block1 {
+              background: linear-gradient(107.3deg, #5E56FF 0%, #55AAFF 100%);
+              box-shadow: 0 5px 30px rgba(89, 128, 255, 0.25); }
+            .section__info .info__item .info__blocks .info__block-img.block2 {
+              background: linear-gradient(135deg, #8653FF 0%, #C84EFF 100%);
+              box-shadow: 0 5px 30px rgba(134, 83, 255, 0.25); }
+            .section__info .info__item .info__blocks .info__block-img.block3 {
+              background: linear-gradient(135deg, #FB5967 0%, #F9AF7C 100%);
+              box-shadow: 0 5px 30px rgba(251, 89, 103, 0.25); }
+            .section__info .info__item .info__blocks .info__block-img.block4 {
+              background: linear-gradient(135deg, #62C993 0%, #C5EF7F 100%);
+              box-shadow: 0 5px 30px rgba(98, 201, 147, 0.25); }
+            .section__info .info__item .info__blocks .info__block-img.block5 {
+              background: linear-gradient(135deg, #FBA24E 0%, #FEE291 100%);
+              box-shadow: 0 5px 30px rgba(251, 162, 78, 0.25); }
+            .section__info .info__item .info__blocks .info__block-img.block6 {
+              background: linear-gradient(135deg, #DB2DA7 0%, #F483AA 100%);
+              box-shadow: 0 5px 30px rgba(219, 45, 167, 0.25); }
+
 /*# sourceMappingURL=main.css.map */
