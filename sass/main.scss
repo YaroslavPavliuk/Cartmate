@@ -11,6 +11,11 @@
   @media (max-width: 1350px) {
       padding: 0 16px;
   }
+  @media (min-width: 768px) {
+    width: 100%;
+    padding: 0 16px;
+    
+}
 }
 a {
   text-decoration: none;
@@ -445,36 +450,107 @@ header {
                             border-radius: 12px;
                             flex-shrink: 0;
                             img {
-                                width: 25px;
-                                height: 25px;
+                                width: 100px;
+                                height: 100px;
                             }
-                        }
-                        &.block1 {
-                            background: linear-gradient(107.3deg, #5E56FF 0%, #55AAFF 100%);
-                            box-shadow: 0 5px 30px rgba(89, 128, 255, 0.25);
-                        }
-                        &.block2 {
-                            background: linear-gradient(135deg, #8653FF 0%, #C84EFF 100%);
-                            box-shadow: 0 5px 30px rgba(134, 83, 255, 0.25);
-                        }
-                        &.block3 {
-                            background: linear-gradient(135deg, #FB5967 0%, #F9AF7C 100%);
-                            box-shadow: 0 5px 30px rgba(251, 89, 103, 0.25);
-                        }
-                        &.block4 {
-                            background: linear-gradient(135deg, #62C993 0%, #C5EF7F 100%);
-                            box-shadow: 0 5px 30px rgba(98, 201, 147, 0.25);
-                        }
-                        &.block5 {
-                            background: linear-gradient(135deg, #FBA24E 0%, #FEE291 100%);
-                            box-shadow: 0 5px 30px rgba(251, 162, 78, 0.25);
-                        }
-                        &.block6 {
-                            background: linear-gradient(135deg, #DB2DA7 0%, #F483AA 100%);
-                            box-shadow: 0 5px 30px rgba(219, 45, 167, 0.25);
-                        }
+                        }                        
                     }
                 }
+            }
+        }
+    }
+}
+
+
+// Section about
+
+.section__about{
+    @media (max-width: 768px) {
+        padding: 0;
+    }
+    &.about1{
+        padding: 250px 0 180px 0;
+        background-color: $bg2;
+        display: flex;
+        
+    }
+    &.about2{
+        padding: 250px 0 180px 0;
+        background-color: $bg3;
+        display: flex;
+       
+        
+    }
+    .about{
+        display: flex;
+        @media (max-width: 970px) {
+            justify-content: center;
+            flex-wrap: wrap;
+            
+        }
+        @media (max-width: 768px) {
+            width: 100%;
+            flex-wrap: wrap;
+        }
+        &__item{
+            
+            flex: 0 0 50%;
+            
+            @media (min-width: 768px) {
+                margin: 0 auto;
+                margin-bottom: 10px;
+                order: -1;
+            }
+            
+            &-img{
+                @media (max-width: 941px) {
+                    
+                    order: -1;
+                }
+                img{
+                    @media (max-width: 768px) {
+                        margin: 0 auto;
+                        width: 150px;
+                        
+                    }
+                    width: 80px;
+                    height: auto;
+                }
+            }
+
+            .about__title{
+            
+                font-style: normal;
+                font-weight: 500;
+                font-size: 55px;
+                line-height: 70px;
+                letter-spacing: -0.04em;
+                color: $text2;
+            }
+            .about__text{
+                @media (max-width: 768px) {
+                    max-width: 100%;
+                }
+                margin-top: 30px;
+                margin-bottom: 60px;
+                max-width: 518px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 34px;
+                color: $text3;
+            }
+            .about__btn{
+                display: flex;
+                align-items: center;
+                max-width: 190px;
+                padding: 18px 30px;
+                background-color: $basic6;
+                border-radius: 10px;
+                & img{
+                    margin-left: 19px;
+                }
+                
             }
         }
     }
